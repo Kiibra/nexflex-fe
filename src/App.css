@@ -22,11 +22,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-nav > ul {
-  margin: 0;
-  padding: 16px 32px;
-}
-
 
 nav a {
   color: #f0e2e2; 

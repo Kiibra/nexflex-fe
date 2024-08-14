@@ -40,6 +40,7 @@
   align-items: center;
   text-align: center;
   background-color: rgba(8, 8, 8, 0.695);
+  border-radius: 4px;
   width: 400px;
 }
 
@@ -62,7 +63,7 @@
   font-weight: 600;
 }
 
-.members a {
+.member a {
   color: #dd1b16;
 }
 

@@ -101,7 +101,7 @@ const Signup = ({ handleAuthEvt }) => {
               {!isSubmitted ? 'Sign Up' : '🚀 Sending...'}
             </button>
           </div>
-          <div className={styles.members}>
+          <div className={styles.member}>
             Already a member? 
             <Link to={"/auth/login"}> Sign in</Link>
           </div>

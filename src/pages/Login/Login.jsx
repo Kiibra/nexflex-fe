@@ -1,4 +1,3 @@
-// npm modules
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
@@ -45,34 +44,41 @@ const LoginPage = ({ handleAuthEvt }) => {
 
   return (
     <main className={styles.container}>
-      <h1>Log In</h1>
-      <p className={styles.message}>{message}</p>
-      <form autoComplete="off" onSubmit={handleSubmit} className={styles.form}>
-        <label className={styles.label}>
-          Email
-          <input
-            type="text"
-            value={email}
-            name="email"
-            onChange={handleChange}
-          />
-        </label>
-        <label className={styles.label}>
-          Password
-          <input
-            type="password"
-            value={password}
-            name="password"
-            onChange={handleChange}
-          />
-        </label>
+
+      <div className={styles.formContainer}>
+        <p className={styles.message}>{message}</p>
+        <h2>Log In</h2>
+        <form autoComplete="off" onSubmit={handleSubmit} className={styles.form}>
+          <label className={styles.label}>
+            Email
+            <input
+              type="text"
+              value={email}
+              name="email"
+              placeholder="you@example.com"
+              onChange={handleChange}
+            />
+          </label>
+          <label className={styles.label}>
+            Password
+            <input
+              type="password"
+              value={password}
+              name="password"
+              onChange={handleChange}
+            />
+          </label>
         <div>
-          <Link to="/">Cancel</Link>
           <button className={styles.button} disabled={isFormInvalid()}>
             Log In
           </button>
         </div>
+        <div className={styles.nonmember}>
+            Don't have an account? 
+            <Link to={"/auth/signup"}> Sign Up</Link>
+          </div>
       </form>
+      </div>
     </main>
   )
 }
