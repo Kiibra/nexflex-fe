@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  padding: 0; 
+  background-color: transparent; 
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+.navbar img {
+  margin-left: 290px;
+  height: 115px;
+  margin-top: 0;
+}

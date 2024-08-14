@@ -1,47 +1,71 @@
-input {
-  margin-left: 16px;
+.container input {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
   padding: 4px 8px;
   font-size: 16px;
-  width: 300px;
-}
-
-input[type="file"] {
-  padding: 0;
+  width: 100%;
 }
 
 .container {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("/assets/hero.png");
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100vw; 
+  height: 100vh; 
+  margin: 0; 
+  padding: 0; 
 }
 
 .message {
   margin-top: 0;
   height: 20px;
-  color: #dd1b16;
+  color: #ebe4e4;
   font-size: 18px;
   font-weight: bold;
 }
 
 .form {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(8, 8, 8, 0.695);
+  width: 400px;
 }
 
 .label {
-  width: 100%;
   display: flex;
-  justify-content: end;
-  align-items: center;
-  margin-bottom: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  color: rgb(255, 255, 255);
 }
 
 .button {
-  margin-left: 16px;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  width: 100%;
+  font-size: medium;
+  font-weight: 600;
 }
 
-.form > label:last-of-type {
-  margin-bottom: 16px;
+.members a {
+  color: #dd1b16;
+}
+
+.container a {
+  text-decoration: none;
 }

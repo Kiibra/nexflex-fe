@@ -1,12 +1,14 @@
-// npm modules
-// import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import styles from './NavBar.module.css'
 
-
-const NavBar = () => {
+const Navbar = () => {
   return (
-    <nav>
+    <nav className={styles.navbar}>
+      <Link to="/">
+        <img src="/assets/nexflex-logo.png" alt="Nexflex logo" className={styles.logo} />
+      </Link>
     </nav>
   )
 }
 
-export default NavBar
+export default Navbar
