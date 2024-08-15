@@ -8,6 +8,7 @@ const AuthScreen = () => {
   const [email, setEmail] = useState("")
 
   return (
+    <>
     <main className={styles.main}>
       <div className={styles.mainContent}>
         <div className={styles.intro}>
@@ -22,14 +23,16 @@ const AuthScreen = () => {
             name="email"
             placeholder="Email address"
             onChange={(e) => setEmail(e.target.value)}
-          />
+            />
           <button className={styles.button}>
             Get Started
             <ChevronRight />
           </button>
         </form>
       </div>
+
     </main>
+    </>
   )
 }
 

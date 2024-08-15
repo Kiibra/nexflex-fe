@@ -1,6 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .mainContent {
@@ -33,14 +34,15 @@
 }
 
 .authForm input {
-  background-color: rgba(0, 0, 0, 0.594);
+  background-color: rgba(9, 9, 9, 0.604);
+  color: white;
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 4px;
   height: 40px;
   padding: 0 10px;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 18px;
   width: 300px; 
 }
 

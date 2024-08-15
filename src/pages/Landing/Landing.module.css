@@ -1,9 +1,97 @@
-.container nav{
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container nav {
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("/assets/hero.png");
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding-right: 300px;
-  padding-top: 40px;
 }
+
+.separator {
+  background-color: rgb(92, 88, 88);
+  height: 5px;
+}
+
+.firstSection {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.contents {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.leftHalf, .rightHalf {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.leftHalf {
+  text-align: center;
+  padding: 20px;
+}
+
+.leftHalf h1 {
+  font-size: 37px;
+  font-weight: 800;
+}
+
+.leftHalf p {
+  text-align: start;
+}
+
+.rightHalf {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tvContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Adjust based on your design */
+}
+
+.tvImage {
+  width: 100%;
+  height: auto;
+  position: relative; /* Ensure it's in the same stacking context as the video */
+  z-index: 1; /* Make sure the TV image is above the video */
+}
+
+.videoContainer {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 0; /* Place the video behind the TV image */
+}
+
+video {
+  width: 80%;
+  height: 56%;
+  /* object-fit: cover; Ensures the video covers the container without stretching */
+}
+
