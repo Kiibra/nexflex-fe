@@ -1,13 +1,9 @@
-.container {
+.container nav{
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url("/assets/hero.png");
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  width: 100vw; 
-  height: 100vh; 
-  margin: 0; 
-  padding: 0; 
+  text-align: center;
+  padding-right: 300px;
+  padding-top: 40px;
 }

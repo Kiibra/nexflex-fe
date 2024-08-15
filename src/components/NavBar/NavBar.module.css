@@ -1,16 +1,45 @@
 .navbar {
   display: flex;
-  padding: 0; 
-  background-color: transparent; 
-  width: 100%;
-  position: fixed; 
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; 
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar img {
   margin-left: 290px;
   height: 115px;
   margin-top: 0;
+}
+
+.spacer {
+  flex-grow: 1; /* Pushes the sign-in link to the right */
+}
+
+.signIn {
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: medium;
+  /* font-weight: 600; */
+  text-decoration: none;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.signIn a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 70px;
+  height: 20px;
+}
+
+.signIn:hover {
+  background-color: darkred;
 }
