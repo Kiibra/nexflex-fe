@@ -16,8 +16,8 @@ const Landing = ({ user, handleLogout }) => {
       {/* separator */}
       <div className={styles.separator}> </div>
 
-      {/* first section */}
-      <div className={styles.firstSection}>
+      {/* 1st section */}
+      <div className={styles.sectionContainer}>
         <div className={styles.contents}>
           <div className={styles.leftHalf}>
             {/* Left half content here */}
@@ -26,7 +26,7 @@ const Landing = ({ user, handleLogout }) => {
           </div>
           <div className={styles.rightHalf}>
             {/* Right half content here */}
-            <div className={styles.tvContainer}>
+            <div className={styles.imgContainer}>
               <img src="/assets/tv.png" alt="TV image" className={styles.tvImage} />
               <div className={styles.videoContainer}>
                 <video autoPlay muted>
@@ -42,7 +42,36 @@ const Landing = ({ user, handleLogout }) => {
       {/* separator */}
       <div className={styles.separator}> </div>
 
+      {/* 2nd section */}
+      <div className={styles.sectionContainer}>
+        <div className={styles.contents}>
+          <div className={styles.leftHalf}>
+            {/* Left half content here */}
+            <div className={styles.imgContainer}>
+              <img src="/assets/stranger-things-lg.png" alt="TV image"  className={styles.tvImage}/>
+              <div className={styles.secondImage}>
+                <img src="/assets/stranger-things-sm.png" alt="image" />
+              </div>
+              <div className={styles.items}>
+                <div>
+                  <span>Stranger Things</span>
+                  <span>Downloading...</span>
+                </div>
+                <img src="/assets/download-icon.gif" alt="icon" />
+              </div>
+              
+            </div>
+          </div>
+          <div className={styles.rightHalf}>
+            {/* Right half content here */}
+            <h1>Download your shows to watch offline</h1>
+            <p>Save your favorites easily and always have something to watch.</p>
+          </div>
+        </div>
+      </div>
+
       {/* separator */}
+      <div className={styles.separator}> </div>
 
     </main>
   )
