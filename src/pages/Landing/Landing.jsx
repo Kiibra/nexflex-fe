@@ -42,6 +42,8 @@ const Landing = ({ user, handleLogout }) => {
       {/* separator */}
       <div className={styles.separator}> </div>
 
+      {/* separator */}
+
     </main>
   )
 }

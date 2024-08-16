@@ -13,8 +13,9 @@
 }
 
 .separator {
-  background-color: rgb(92, 88, 88);
+  background-color: rgb(92, 87, 87);
   height: 5px;
+  padding-top: 5px; /* this is helping prevent margin from collapsing */
 }
 
 .firstSection {
@@ -66,7 +67,7 @@
 .tvContainer {
   position: relative;
   width: 100%;
-  max-width: 500px; /* Adjust based on your design */
+  max-width: 500px;
 }
 
 .tvImage {
@@ -92,6 +93,5 @@
 video {
   width: 80%;
   height: 56%;
-  /* object-fit: cover; Ensures the video covers the container without stretching */
 }
 
