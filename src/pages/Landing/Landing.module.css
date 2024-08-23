@@ -130,3 +130,23 @@ video {
   font-size: 24px;
   font-weight: 600;
 }
+
+.thirdImgContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+}
+
+.devicesImage {
+  width: 100%;
+  height: auto;
+  position: relative; 
+  z-index: 1;
+}
+
+.thirdImgContainer video {
+  width: 70%;
+  height: 60%;
+  margin-bottom: 110px;
+}

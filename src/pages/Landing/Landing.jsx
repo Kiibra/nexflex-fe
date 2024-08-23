@@ -83,8 +83,8 @@ const Landing = ({ user, handleLogout }) => {
           </div>
           <div className={styles.rightHalf}>
             {/* Right half content here */}
-            <div className={styles.imgContainer}>
-              <img src="/assets/device-pile.png" alt="TV image" className={styles.tvImage} />
+            <div className={styles.thirdImgContainer}>
+              <img src="/assets/device-pile.png" alt="TV image" className={styles.devicesImage} />
               <div className={styles.videoContainer}>
                 <video autoPlay muted>
                 <source src="/assets/video-devices.mp4" type="video/mp4" 
