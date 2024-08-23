@@ -30,7 +30,7 @@ const Landing = ({ user, handleLogout }) => {
               <img src="/assets/tv.png" alt="TV image" className={styles.tvImage} />
               <div className={styles.videoContainer}>
                 <video autoPlay muted>
-                <source src="/hero-vid.mp4" type="video/mp4" 
+                <source src="/assets/hero-vid.mp4" type="video/mp4" 
                 />
                 </video>
               </div>
@@ -87,7 +87,7 @@ const Landing = ({ user, handleLogout }) => {
               <img src="/assets/device-pile.png" alt="TV image" className={styles.tvImage} />
               <div className={styles.videoContainer}>
                 <video autoPlay muted>
-                <source src="/hero-vid.mp4" type="video/mp4" 
+                <source src="/assets/video-devices.mp4" type="video/mp4" 
                 />
                 </video>
               </div>
