@@ -73,6 +73,32 @@ const Landing = ({ user, handleLogout }) => {
       {/* separator */}
       <div className={styles.separator}> </div>
 
+       {/* 3rd section */}
+      <div className={styles.sectionContainer}>
+        <div className={styles.contents}>
+          <div className={styles.leftHalf}>
+            {/* Left half content here */}
+            <h1>Watch everywhere</h1>
+            <p>Stream unlimited movies and TV shows on your phone tablet, laptop, and TV.</p>
+          </div>
+          <div className={styles.rightHalf}>
+            {/* Right half content here */}
+            <div className={styles.imgContainer}>
+              <img src="/assets/device-pile.png" alt="TV image" className={styles.tvImage} />
+              <div className={styles.videoContainer}>
+                <video autoPlay muted>
+                <source src="/hero-vid.mp4" type="video/mp4" 
+                />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* separator */}
+      <div className={styles.separator}> </div>
+
     </main>
   )
 }
