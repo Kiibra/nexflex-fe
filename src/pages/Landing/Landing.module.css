@@ -98,16 +98,35 @@ video {
   height: 56%;
 }
 
-.secondImage {
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  /* margin-right: 10px; */
-
+.smImage img {
+  width: 50px; 
 }
 
-.secondImage img {
-  width: 80px; 
-  /* height: auto; */
+.strangerThings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} 
+
+.lowerBanner {
+  display: flex;
+  background-color: rgba(5, 5, 5, 0.41);
+  border-radius: 4px;
+  width: 50%;
+}
+
+.downloadIcon {
+  width: 60px;
+  display: flex;
+}
+
+.lowerBanner span {
+  /* display: flex;  */
+  display: block; /* Make spans stack vertically */
+  margin: 12px;
+}
+
+.firstSpan {
+  font-size: 24px;
+  font-weight: 600;
 }

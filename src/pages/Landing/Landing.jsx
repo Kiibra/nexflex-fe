@@ -47,17 +47,17 @@ const Landing = ({ user, handleLogout }) => {
         <div className={styles.contents}>
           <div className={styles.leftHalf}>
             {/* Left half content here */}
-            <div className={styles.imgContainer}>
-              <img src="/assets/stranger-things-lg.png" alt="TV image"  className={styles.tvImage}/>
-              <div className={styles.secondImage}>
+            <div className={styles.strangerThings}>
+              <img src="/assets/stranger-things-lg.png" alt="Stranger Things img" />
+              <div className={styles.lowerBanner}>
+              <div className={styles.smImage}>
                 <img src="/assets/stranger-things-sm.png" alt="image" />
               </div>
-              <div className={styles.items}>
-                <div>
-                  <span>Stranger Things</span>
-                  <span>Downloading...</span>
-                </div>
-                <img src="/assets/download-icon.gif" alt="icon" />
+              <div className={styles.bannerSpans}>
+                  <span className={styles.firstSpan}>Stranger Things</span>
+                  <span className={styles.secSpan}>Downloading...</span>
+              </div>
+                <img className={styles.downloadIcon} src="/assets/download-icon.gif" alt="icon" />
               </div>
               
             </div>
