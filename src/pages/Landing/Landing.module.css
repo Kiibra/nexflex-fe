@@ -69,8 +69,6 @@
   width: 100%;
   max-width: 500px;
   display: flex;
-  /* justify-content: center; */
-  /* flex-direction: row; */
 }
 
 .tvImage {
@@ -90,7 +88,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  z-index: 0; /* Place the video behind the TV image */
+  z-index: 0; /* Places the video behind the TV image */
 }
 
 video {
@@ -149,4 +147,24 @@ video {
   width: 70%;
   height: 60%;
   margin-bottom: 110px;
+}
+
+.leftSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.rightSide h2 {
+  font-size: 34px;
 }

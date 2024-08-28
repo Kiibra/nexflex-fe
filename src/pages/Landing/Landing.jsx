@@ -99,6 +99,27 @@ const Landing = ({ user, handleLogout }) => {
       {/* separator */}
       <div className={styles.separator}> </div>
 
+      {/*  4th section */}
+      
+      <div className={styles.sectionContainer}>
+        <div className={styles.contents}>
+          <div className={styles.leftSide}>
+            {/* Left half content here */}
+            <div className={styles.strangerThings}>
+              <img src="/assets/kids.png" alt="kids image" />
+            </div>
+          </div>
+          <div className={styles.rightSide}>
+            {/* Right half content here */}
+            <h2>Create profiles for kids</h2>
+            <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* separator */}
+      <div className={styles.separator}> </div>
+
     </main>
   )
 }
