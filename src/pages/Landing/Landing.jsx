@@ -3,6 +3,7 @@ import styles from './Landing.module.css'
 // components
 import HomeScreen from '../../components/HomeScreen/HomeScreen'
 import AuthScreen from '../../components/AuthScreen/AuthScreen'
+import Footer from '../../components/Footer/Footer'
 
 const Landing = ({ user, handleLogout }) => {
   return (
@@ -120,6 +121,8 @@ const Landing = ({ user, handleLogout }) => {
       {/* separator */}
       <div className={styles.separator}> </div>
 
+      {/* footer */}
+      <Footer />
     </main>
   )
 }
