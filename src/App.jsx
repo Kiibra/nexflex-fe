@@ -12,6 +12,7 @@ import ChangePassword from './pages/ChangePassword/ChangePassword'
 // components
 import NavBar from './components/NavBar/NavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
+import Footer from './components/Footer/Footer'
 
 // services
 import * as authService from './services/authService'
@@ -19,7 +20,7 @@ import * as authService from './services/authService'
 // styles
 import './App.css'
 
-function App() {
+function App(props) {
   const [user, setUser] = useState(authService.getUser())
   const navigate = useNavigate()
 
@@ -63,6 +64,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer footer={props.footer}/>
     </>
   )
 }

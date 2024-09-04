@@ -1,4 +1,4 @@
-// import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { ChevronRight } from 'lucide-react'
 
@@ -6,6 +6,13 @@ import styles from './AuthScreen.module.css'
 
 const AuthScreen = () => {
   const [email, setEmail] = useState("")
+  const navigate = useNavigate()
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault()
+    // gets us that email in the url so we can grab it for the email input in our signup form 
+    navigate("/auth/signup?email=" + email)
+  }
 
   return (
     <>
@@ -16,7 +23,7 @@ const AuthScreen = () => {
           <p>Watch anywhere. Cancel anytime.</p>
           <p>Ready to watch? Enter your email to create or restart your membership.</p>
         </div>
-        <form className={styles.authForm}>
+        <form className={styles.authForm} onSubmit={handleFormSubmit}>
           <input
             type="email"
             value={email}

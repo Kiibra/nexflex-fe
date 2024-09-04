@@ -10,15 +10,18 @@ import styles from './Signup.module.css'
 
 const Signup = ({ handleAuthEvt }) => {
   const navigate = useNavigate()
+  const {searchParams} = new URL(document.location)
+  const emailValue = searchParams.get("email")
 
   const [message, setMessage] = useState('')
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
+    email: emailValue ||'',
     password: '',
     passwordConf: '',
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
+
 
   const handleChange = evt => {
     setMessage('')
